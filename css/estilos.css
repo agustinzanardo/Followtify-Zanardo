@@ -1,0 +1,259 @@
+* {
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+
+.body {
+  font-size: 62.5%;
+}
+
+
+.menu{
+  height: 100px;
+  background-color:#1D4355 ;
+}
+
+.logo{
+  position:absolute;
+  top: 20px;
+  left:20px
+}
+
+.menuBotones{
+  display: flex;
+  justify-content:flex-end;
+  align-items:center;
+  flex-direction: row;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+
+.botones{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 150px;
+  margin: 0px 20px;
+  height:100px;
+  background-color:#1D4355;
+}
+
+.botones:hover{
+  background-color: #289DD2 ;
+  transition: 800ms;
+}
+
+.botones a{
+  margin:1px;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.section {
+  width:1600px;
+  height:650px;
+  background-image: url("background.png");
+}
+
+.start {
+  padding-left:650px;
+  padding-top: 200px;
+}
+
+.start__title{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 80px;
+  justify-content: center;
+  color:#69E0CF;
+}
+
+.start h2 {
+  height:100px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 80px;
+  line-height: 100px;
+  justify-content: center;
+  color:#69E0CF;
+
+  overflow: hidden;
+  list-style: none;
+  animation: animation 4s infinite alternate steps(30);
+}
+
+@keyframes  animation {
+  from {
+    width:100%;
+  }
+  to {
+    width: 0;
+  }
+}
+.start__text{
+  font-size: 20px;
+  color:#69E0CF ;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.start__button {
+  margin-left: 100px;
+  margin-top: 20px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width:200px;
+  height:20px;
+  background-color:#41C1BA;
+  font-size:18px;
+  font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.start__button a {
+  text-decoration: none;
+  color:#1D4355;
+  font-family: 'Noto Sans JP', sans-serif;
+  
+}
+
+.start__button a:hover{
+  color: azure;
+}
+
+.description {
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  background-color:#41C1BA;
+}
+
+.description div{
+  width: 300px;
+  margin: 30px;
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  color:white;
+  
+}
+
+.description div img {
+  width: 200px;
+}
+
+.description div img:hover{
+  transform: scale(1.04);
+}
+
+.description div h3 {
+  font-size: 35px;
+}
+
+.description div p {
+  font-size: 15px;
+  text-indent: 10px;
+}
+
+.description div:hover {
+  color:#1D4355;
+}
+
+.prices {
+  display: grid;
+  height: 500px;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 120px 300px;
+  grid-template-areas: "header header header" 
+  "pricesStarter pricesInfluencer pricesBrand";
+  grid-column-gap: 10px;
+  grid-row-gap: 10x;
+  justify-content: space-around;
+  justify-items:center;
+  background-color: #365B6D;
+}
+
+
+
+.prices div {
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 5px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #41C1BA;
+  margin-top: 30px;
+  color:#1D4355;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 30px;
+}
+
+.prices div h3 {
+  font-size: 30px;
+}
+
+.prices div p {
+  font-size:15px;
+  text-indent: 5px;
+  line-height: 35px;
+}
+
+.prices div h4 {
+  font-size: 18px;
+}
+
+.pricesTitle {
+  grid-area: header;
+  font-size: 35px;
+}
+
+.pricesStarter {
+  grid-area: pricesStarter;
+}
+
+.pricesStarter:hover {
+  background-color: whitesmoke;
+}
+
+.pricesInfluencer {
+  grid-area:pricesInfluencer;
+}
+
+.pricesInfluencer:hover {
+  background-color: whitesmoke;
+}
+
+.pricesBrand {
+  grid-area: pricesBrand;
+}
+
+.pricesBrand:hover {
+  background-color: whitesmoke;
+}
+
+.prices div {
+  border:1px solid black;
+}
+
+.pie{
+  bottom: 0;
+  background: linear-gradient(#365B6D,#41C1BA);
+  font-size: 20px;
+  text-align: justify;
+  padding: 5px;
+  cursor: pointer;
+  font-family: 'Noto Sans JP', sans-serif;
+  column-count:2;
+}
+
+.pieBotones a{
+  text-decoration:none;
+  color: white;
+}
+
+.pieBotones a:hover {
+  color:#69E0CF;
+}
+

@@ -1,0 +1,153 @@
+* {
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+
+.body {
+  font-size: 62.5%;
+  background-color: #289DD2;
+}
+
+.menu{
+  height: 100px;
+  background-color:#1D4355 ;
+}
+
+.logo{
+  position:absolute;
+  top: 20px;
+  left:20px
+}
+
+.menuBotones{
+  display: flex;
+  justify-content:flex-end;
+  align-items:center;
+  flex-direction: row;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+
+.botones{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 150px;
+  margin: 0px 20px;
+  height:100px;
+  background-color:#1D4355;
+}
+
+.botones:hover{
+  background-color: #289DD2 ;
+  transition: 800ms;
+}
+
+.botones a{
+  margin:1px;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+
+.prices {
+  display: grid;
+  height: 570px;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 120px 300px;
+  grid-template-areas: "header header header" 
+  "pricesStarter pricesInfluencer pricesBrand";
+  grid-column-gap: 10px;
+  grid-row-gap: 10x;
+  justify-content: space-around;
+  justify-items:center;
+  background-color: #365B6D;
+}
+
+
+
+.prices div {
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 5px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #41C1BA;
+  margin-top: 30px;
+  color:#1D4355;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 30px;
+}
+
+.prices div h3 {
+  font-size: 30px;
+}
+
+.prices div p {
+  font-size:15px;
+  text-indent: 5px;
+  line-height: 35px;
+}
+
+.prices div h4 {
+  font-size: 18px;
+}
+
+.pricesTitle {
+  grid-area: header;
+  font-size: 35px;
+}
+
+.pricesStarter {
+  grid-area: pricesStarter;
+}
+
+.pricesStarter:hover {
+  background-color: whitesmoke;
+}
+
+.pricesInfluencer {
+  grid-area:pricesInfluencer;
+}
+
+.pricesInfluencer:hover {
+  background-color: whitesmoke;
+}
+
+.pricesBrand {
+  grid-area: pricesBrand;
+}
+
+.pricesBrand:hover {
+  background-color: whitesmoke;
+}
+
+.prices div {
+  border:1px solid black;
+}
+
+
+
+
+.footer{
+  bottom: 0;
+  background: linear-gradient(#365B6D,#41C1BA);
+  font-size: 20px;
+  text-align: justify;
+  padding: 5px;
+  cursor: pointer;
+  font-family: 'Noto Sans JP', sans-serif;
+  column-count:2;
+}
+
+.pieBotones a{
+  text-decoration:none;
+  color: white;
+}
+
+.pieBotones a:hover {
+  color:#69E0CF;
+}
